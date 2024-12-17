@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account details form</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Account Details Form</h1>
+    <form id="accountForm">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" required minlength="3" maxlength="50"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone</label><br>
+        <input type="text" id="phone" name="phone" required minlength="10" maxlength="14"><br><br>
+
+        <label for="age">Age</label><br>
+        <input type="number" id="age" name="age" min="18" max="120" required><br><br>
+
+        <label for="gender">Gender</label><br>
+        <input type="text" id="gender" name="gender" required minlength="4" maxlength="15"><br><br>
+
+        <label for="address">Address </label><br>
+        <input type="text" id="address" name="address" maxlength="50"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="result" style="color: green;"></p>
+
+</form>
+    <script src="style.js"></script>
+</body>
+</html>
